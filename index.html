@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="playing_head">
+            <div class="play_list">
+                <i class="fa-regular fa-angle-down toggle_play_list" data-open="false"></i>
+                <span>Now Player</span>
+                <div class="menu_tools">
+                    <i class="fa-regular fa-ellipsis toggle_submenu_tools"></i>
+                    <ul class="submenu d-none">
+                        <!-- <li>
+                            <i class="fa-solid fa-heart"></i>
+                            <a href="#">Favorite</a>
+                        </li> -->
+                        <li class="delete_music">
+                            <i class="fa-solid fa-trash"></i>
+                            <a href="#">Delete Music</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-share-from-square"></i>
+                            <a href="#">Share</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <a href="#">Details</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image_cover">
+                <img src="img/background-header2.jpg" alt="image cover" width="100%" />
+            </div>
+
+            <div class="title_text_play">
+                <h3>The Name Of Music</h3>
+                <h5>NCS Reiease</h5>
+            </div>
+
+            <div class="progress_bar">
+                <div class="range_bar">
+                    <input type="range" min="0" max="360" class="range">
+                    <div class="progress"></div>
+                </div>
+                <div class="timers_music">
+                    <span class="current_time">00:00</span>
+                    <span class="duration_time">00:00</span>
+                </div>
+            </div>
+
+            <div class="play_tools">
+                <div class="repeat">
+                    <i class="fa-regular fa-repeat-1 d-none"></i>
+                    <i class="fa-regular fa-repeat"></i>
+                </div>
+                <i class="fa-solid fa-left-to-line si-2x previous_music"></i>
+                <div class="play_pause_music">
+                    <i class="fa-solid fa-circle-play si-2x play"></i>
+                    <i class="fa-solid fa-circle-pause si-2x pause d-none"></i>
+                </div>
+                <i class="fa-solid fa-right-from-line si-2x next_music"></i>
+                <div class="volume">
+                    <i class="fa-solid fa-volume toggle_volume_range"></i>
+                    <div class="range_bar d-none">
+                        <input type="range" min="0" max="100" class="range">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <ul class="play_list_box"></ul>
+    </div>
+    <audio hidden controls></audio>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
